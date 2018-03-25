@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onLogin(){
-        
+
     }
 
     public void startSlideUpAnimations() {
