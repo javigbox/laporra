@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">La Porra</string>
+
+    <!--FACEBOOK-->
+    <string name="FACEBOOK_APP_ID">1236514053148166</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">d15603889988a29623b31a4aaa6d81dc</string>
+
+    <!--LOGIN-->
+    <string name="login">INICIAR SESIÓN</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="enter">Entrar</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="register">REGÍSTRATE</string>
+    <string name="login_facebook">Iniciar sesión con facebook</string>
+
+</resources>
