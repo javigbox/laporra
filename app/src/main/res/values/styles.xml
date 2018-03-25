@@ -27,6 +27,4 @@
         <item name="android:layout_marginTop">20dp</item>
     </style>
 
-    <style name="AppLoginTheme" parent="Theme.AccountKit"/>
-
 </resources>
