@@ -67,7 +67,6 @@ public class LoginActivity extends AppCompatActivity {
     LoginButton buttonFacebook;
 
     CallbackManager callbackManager;
-    Animation slideUpAnimation, slideDownAnimation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,12 +106,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        slideUpAnimation = AnimationUtils.loadAnimation(getApplicationContext(),
-                R.anim.slide_up_animation);
-
-        slideDownAnimation = AnimationUtils.loadAnimation(getApplicationContext(),
-                R.anim.slide_down_animation);
-
         buttonEnter.setTypeface(FontUtils.getFuturaNdExtraBoldIt(this));
         ScrollView scrollView = (ScrollView) findViewById(R.id.scroll);
         OverScrollDecoratorHelper.setUpOverScroll(scrollView);
@@ -128,18 +121,30 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void startSlideUpAnimations() {
-        slideUpAnimation.setDuration(600);
-        textLogin.startAnimation(slideUpAnimation);
-        slideUpAnimation.setDuration(700);
-        editEmail.startAnimation(slideUpAnimation);
-        slideUpAnimation.setDuration(800);
-        editPassword.startAnimation(slideUpAnimation);
-        slideUpAnimation.setDuration(900);
-        buttonEnter.startAnimation(slideUpAnimation);
-        slideUpAnimation.setDuration(1000);
-        textForgot.startAnimation(slideUpAnimation);
-        slideUpAnimation.setDuration(1100);
-        textRegister.startAnimation(slideUpAnimation);
+        Animation slideUpAnimation1 = AnimationUtils.loadAnimation(getApplicationContext(),
+                R.anim.slide_up_animation);
+        slideUpAnimation1.setDuration(100);
+        textLogin.startAnimation(slideUpAnimation1);
+        Animation slideUpAnimation2 = AnimationUtils.loadAnimation(getApplicationContext(),
+                R.anim.slide_up_animation);
+        slideUpAnimation2.setDuration(300);
+        editEmail.startAnimation(slideUpAnimation2);
+        Animation slideUpAnimation3 = AnimationUtils.loadAnimation(getApplicationContext(),
+                R.anim.slide_up_animation);
+        slideUpAnimation3.setDuration(600);
+        editPassword.startAnimation(slideUpAnimation3);
+        Animation slideUpAnimation4 = AnimationUtils.loadAnimation(getApplicationContext(),
+                R.anim.slide_up_animation);
+        slideUpAnimation4.setDuration(900);
+        buttonEnter.startAnimation(slideUpAnimation4);
+        Animation slideUpAnimation5 = AnimationUtils.loadAnimation(getApplicationContext(),
+                R.anim.slide_up_animation);
+        slideUpAnimation5.setDuration(1200);
+        textForgot.startAnimation(slideUpAnimation5);
+        Animation slideUpAnimation6 = AnimationUtils.loadAnimation(getApplicationContext(),
+                R.anim.slide_up_animation);
+        slideUpAnimation6.setDuration(1500);
+        textRegister.startAnimation(slideUpAnimation6);
     }
 
 }

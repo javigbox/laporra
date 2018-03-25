@@ -28,13 +28,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center_horizontal|bottom">
 
             <TextView
                 android:id="@+id/text_login"
-                fontPath="fonts/FuturaCondensedItalic Regular.ttf"
-                android:layout_width="wrap_content"
+                fontPath="fonts/FuturaCndBoldIt.ttf"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/login"
                 android:textColor="@color/colorAccent"
                 android:textSize="15sp"
@@ -107,44 +108,22 @@
                 android:text="@string/register"
                 android:textColor="@color/colorAccent"
                 android:textSize="15sp"
-                tools:ignore="MissingPrefix" />
+                tools:ignore="MissingPrefix"
+                android:layout_marginBottom="20dp"/>
 
-            <LinearLayout
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/button_facebook"
+                fontPath="fonts/Mosk Semi-Bold 600.ttf"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="bottom">
-
-
-                <!--<Button-->
-                    <!--android:id="@+id/button_facebook"-->
-                    <!--fontPath="fonts/Mosk Semi-Bold 600.ttf"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="50dp"-->
-                    <!--android:gravity="center"-->
-                    <!--android:background="@color/facebook_blue"-->
-                    <!--android:paddingLeft="15dp"-->
-                    <!--android:drawableLeft="@drawable/facebook"-->
-                    <!--android:text="@string/login_facebook"-->
-                    <!--android:textSize="12sp"-->
-                    <!--android:textColor="@color/white"-->
-                    <!--tools:ignore="MissingPrefix"-->
-                    <!--android:visibility="gone"/>-->
-
-                <com.facebook.login.widget.LoginButton
-                    android:id="@+id/button_facebook"
-                    fontPath="fonts/Mosk Semi-Bold 600.ttf"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@color/facebook_blue"
-                    android:paddingLeft="30dp"
-                    android:paddingRight="30dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    tools:ignore="MissingPrefix"
-                    android:gravity="center"
-                    android:text="@string/login_facebook"/>
-
-            </LinearLayout>
+                android:layout_height="50dp"
+                android:background="@color/facebook_blue"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                tools:ignore="MissingPrefix"
+                android:gravity="center"
+                android:text="@string/login_facebook"/>
 
         </LinearLayout>
 
