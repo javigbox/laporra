@@ -76,6 +76,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void onLogin(){
+        
+    }
+
     public void startSlideUpAnimations() {
         slideUpAnimation.setDuration(600);
         textLogin.startAnimation(slideUpAnimation);
