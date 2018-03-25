@@ -4,6 +4,7 @@
     <!--FACEBOOK-->
     <string name="FACEBOOK_APP_ID">1236514053148166</string>
     <string name="ACCOUNT_KIT_CLIENT_TOKEN">d15603889988a29623b31a4aaa6d81dc</string>
+    <string name="ak_login_protocol_scheme">ak1236514053148166</string>
 
     <!--LOGIN-->
     <string name="login">INICIAR SESIÓN</string>

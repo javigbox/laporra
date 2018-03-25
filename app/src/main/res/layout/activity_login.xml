@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_horizontal|bottom"
+    android:orientation="vertical"
+    tools:context="com.gboxapps.laporra.activities.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginTop="@android:dimen/app_icon_size"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/layout_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_login"
+                fontPath="fonts/FuturaCondensedItalic Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                tools:ignore="MissingPrefix" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_edittext_green"
+                android:hint="@string/email"
+                android:paddingBottom="10dp"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_edittext_green"
+                android:hint="@string/password"
+                android:paddingBottom="10dp"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/button_enter"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg_button_green"
+                android:text="@string/enter"
+                android:textColor="@color/white"
+                tools:ignore="MissingPrefix"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <TextView
+                android:id="@+id/text_forgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/forgot_password"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_register"
+                fontPath="fonts/FuturaCondensedItalic Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/register"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+
+                <Button
+                    android:id="@+id/button_facebook"
+                    fontPath="fonts/Mosk Semi-Bold 600.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:background="@color/facebook_blue"
+                    android:paddingLeft="15dp"
+                    android:drawableLeft="@drawable/facebook"
+                    android:text="@string/login_facebook"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
