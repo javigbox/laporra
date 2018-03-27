@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LaPorra.iml" filepath="$PROJECT_DIR$/LaPorra.iml" />
+      <module fileurl="file://C:\Users\javig\OneDrive\Documentos\Javi\laporra\LaPorra.iml" filepath="C:\Users\javig\OneDrive\Documentos\Javi\laporra\LaPorra.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\javig\OneDrive\Documentos\Javi\laporra\app\app.iml" filepath="C:\Users\javig\OneDrive\Documentos\Javi\laporra\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/laporra.iml" filepath="$PROJECT_DIR$/laporra.iml" />
     </modules>
   </component>
 </project>
