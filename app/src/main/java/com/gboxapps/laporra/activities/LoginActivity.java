@@ -12,6 +12,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -41,6 +42,9 @@ public class LoginActivity extends AppCompatActivity {
 
     @BindView(R.id.content)
     LinearLayout content;
+
+    @BindView(R.id.logo)
+    ImageView logo;
 
     @BindView(R.id.scroll)
     ScrollView scrollView;
@@ -143,8 +147,12 @@ public class LoginActivity extends AppCompatActivity {
         textForgot.startAnimation(slideUpAnimation5);
         Animation slideUpAnimation6 = AnimationUtils.loadAnimation(getApplicationContext(),
                 R.anim.slide_up_animation);
-        slideUpAnimation6.setDuration(1500);
+        slideUpAnimation6.setDuration(1300);
         textRegister.startAnimation(slideUpAnimation6);
+        Animation slideUpAnimation7 = AnimationUtils.loadAnimation(getApplicationContext(),
+                R.anim.slide_up_animation);
+        slideUpAnimation7.setDuration(1500);
+        buttonFacebook.startAnimation(slideUpAnimation6);
     }
 
 }

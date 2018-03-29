@@ -5,10 +5,14 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
 
 import com.facebook.AccessToken;
 import com.facebook.Profile;
 import com.gboxapps.laporra.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * Created by Javi on 24/03/2018.
@@ -20,10 +24,15 @@ public class SplashActivity extends AppCompatActivity {
 
     private boolean isAppLogged = false;
 
+    @BindView(R.id.logo)
+    ImageView logo;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        ButterKnife.bind(this);
+        logo.setColorFilter(getResources().getColor(R.color.white));
 
         new Handler().postDelayed(new Runnable() {
             public void run() {

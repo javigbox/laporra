@@ -64,5 +64,5 @@ dependencies {
 
         compile 'me.everything:overscroll-decor-android:1.0.4'
     }
-    compile 'com.facebook.android:account-kit-sdk:4.+'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
 }
