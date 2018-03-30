@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
          }
     }
 
-    public void getUserDataFacebook(AccessToken accesToken){
+    public void getUserDataFacebook(final AccessToken accesToken){
         GraphRequest request = GraphRequest.newMeRequest(
                 accesToken,
                 new GraphRequest.GraphJSONObjectCallback() {
@@ -63,8 +63,10 @@ public class MainActivity extends AppCompatActivity {
 
                         // Application code
                         String email = "";
+                        String token = "";
                         try {
                             email = object.getString("email");
+                            token = accesToken.getToken();
                             currentProfile = Profile.getCurrentProfile();
                             name.setText(currentProfile.getFirstName() + " " + currentProfile.getLastName());
                             editEmail.setText(email);
