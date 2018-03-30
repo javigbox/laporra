@@ -36,7 +36,7 @@
 
                 <TextView
                     android:id="@+id/text_login"
-                    fontPath="fonts/FuturaCndBoldIt.ttf"
+                    fontPath="fonts/Lato-BlackItalic.ttf"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -49,11 +49,12 @@
                     android:id="@+id/edit_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    fontPath="fonts/Lato-LightItalic.ttf"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="25dp"
                     android:background="@drawable/bg_edittext_green"
-                    android:drawableLeft="@drawable/email"
+                    android:drawableLeft="@drawable/login_mail"
                     android:drawablePadding="10dp"
                     android:gravity="center_vertical"
                     android:hint="@string/email"
@@ -61,17 +62,19 @@
                     android:paddingBottom="10dp"
                     android:textColor="@color/white"
                     android:textColorHint="@color/white"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="MissingPrefix" />
 
                 <EditText
                     android:id="@+id/edit_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    fontPath="fonts/Lato-LightItalic.ttf"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/bg_edittext_green"
-                    android:drawableLeft="@drawable/lock"
+                    android:drawableLeft="@drawable/login_pass"
                     android:drawablePadding="10dp"
                     android:gravity="center_vertical"
                     android:hint="@string/password"
@@ -79,10 +82,12 @@
                     android:paddingBottom="10dp"
                     android:textColor="@color/white"
                     android:textColorHint="@color/white"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="MissingPrefix" />
 
                 <Button
                     android:id="@+id/button_enter"
+                    fontPath="fonts/Lato-BlackItalic.ttf"
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="47dp"
@@ -98,14 +103,16 @@
                     android:id="@+id/text_forgot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    fontPath="fonts/Lato-LightItalic.ttf"
                     android:layout_marginTop="15dp"
                     android:text="@string/forgot_password"
                     android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:ignore="MissingPrefix" />
 
                 <TextView
                     android:id="@+id/text_register"
-                    fontPath="fonts/FuturaCondensedItalic Regular.ttf"
+                    fontPath="fonts/Lato-BlackItalic.ttf"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"

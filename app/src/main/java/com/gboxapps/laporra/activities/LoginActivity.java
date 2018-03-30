@@ -3,6 +3,7 @@ package com.gboxapps.laporra.activities;
 import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telecom.Call;
@@ -79,6 +80,9 @@ public class LoginActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
+        // finally change the color
+        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.yellow_100));
+
         setupWidgets();
     }
 
@@ -110,7 +114,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        buttonEnter.setTypeface(FontUtils.getFuturaNdExtraBoldIt(this));
         ScrollView scrollView = (ScrollView) findViewById(R.id.scroll);
         OverScrollDecoratorHelper.setUpOverScroll(scrollView);
 
