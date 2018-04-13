@@ -158,4 +158,10 @@ public class LoginActivity extends AppCompatActivity {
         buttonFacebook.startAnimation(slideUpAnimation6);
     }
 
+    @OnClick(R.id.text_register)
+    public void goRegister(){
+        Intent i = new Intent(LoginActivity.this, RegisterActivity.class);
+        startActivity(i);
+    }
+
 }

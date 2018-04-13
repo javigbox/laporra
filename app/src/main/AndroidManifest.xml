@@ -30,6 +30,10 @@
             android:name=".activities.LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".activities.MainActivity"
             android:screenOrientation="portrait"></activity>
         <activity android:name="com.facebook.FacebookActivity"

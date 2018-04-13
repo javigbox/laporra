@@ -13,5 +13,10 @@
     <string name="forgot_password">¿Olvidaste tu contraseña?</string>
     <string name="register">REGÍSTRATE</string>
     <string name="login_facebook">Iniciar sesión con facebook</string>
-
+    
+    <!--REGISTRO-->
+    <string name="register_me">REGISTRARME</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="password_repeat">Repite la contraseña</string>
+    
 </resources>
