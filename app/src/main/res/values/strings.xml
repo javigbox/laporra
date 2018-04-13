@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">La Porra</string>
 
+    <!--TEXTOS DE ERROR-->
+    <string name="bitmap_error">Hubo un problema al obtener la foto</string>
+
     <!--FACEBOOK-->
     <string name="FACEBOOK_APP_ID">1236514053148166</string>
     <string name="fb_login_protocol_scheme">fb1236514053148166</string>
@@ -18,5 +21,8 @@
     <string name="register_me">REGISTRARME</string>
     <string name="username">Nombre de usuario</string>
     <string name="password_repeat">Repite la contraseña</string>
+    <string name="seleccionar_imagen">Seleccionar imagen</string>
+    <string name="hacer_foto">Hacer Foto</string>
+    <string name="choose_photo">Elegir foto</string>
     
 </resources>
