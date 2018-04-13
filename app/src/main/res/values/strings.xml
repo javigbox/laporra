@@ -24,5 +24,7 @@
     <string name="seleccionar_imagen">Seleccionar imagen</string>
     <string name="hacer_foto">Hacer Foto</string>
     <string name="choose_photo">Elegir foto</string>
-    
+
+    <!--MAIN-->
+    <string name="mis_porras">Mis porras</string>
 </resources>

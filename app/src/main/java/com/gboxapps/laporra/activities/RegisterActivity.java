@@ -254,7 +254,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     @OnClick(R.id.image_user)
     public void checkPermissionCamera() {
-        //Permisos en tiempo de ejecucion <carlos.blaya@bluumi.net>
+        //Permisos en tiempo de ejecucion
         PermissionManager.with(RegisterActivity.this)
                 .permission(PermissionEnum.WRITE_EXTERNAL_STORAGE, PermissionEnum.READ_EXTERNAL_STORAGE, PermissionEnum.CAMERA)
                 .askagain(true)
