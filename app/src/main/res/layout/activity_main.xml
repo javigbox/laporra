@@ -35,6 +35,13 @@
                 app:expandedTitleMarginStart="48dp"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/footbal_player_main"
+                    app:layout_collapseMode="parallax"
+                    android:scaleType="centerCrop"/>
+
                 <LinearLayout
                     android:id="@+id/user_layout"
                     android:layout_width="match_parent"
