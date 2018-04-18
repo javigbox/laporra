@@ -110,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
                             editEmail.setText(email);
                             Picasso.with(MainActivity.this)
                                     .load(currentProfile.getProfilePictureUri(200,200))
+                                    .placeholder(R.drawable.user_placeholder)
                                     .into(imageView);
                         } catch (JSONException e) {
                             e.printStackTrace();
