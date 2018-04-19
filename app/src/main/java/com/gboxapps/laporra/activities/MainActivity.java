@@ -21,6 +21,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.facebook.AccessToken;
@@ -83,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         initToolbar();
+        setupDrawerLayout();
         setupWidgets();
     }
 
@@ -179,6 +181,23 @@ public class MainActivity extends AppCompatActivity {
 //                    toolbarTitle.setVisibility(View.VISIBLE);
 //                    toolbarTitle.startAnimation(fadeIn);
                 }
+            }
+        });
+    }
+
+    private void setupDrawerLayout() {
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawerLayout.setFitsSystemWindows(true);
+
+        navigationView = (NavigationView) findViewById(R.id.navigation_view);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                Snackbar.make(content, menuItem.getTitle() + " pressed", Snackbar.LENGTH_LONG).show();
+                menuItem.setChecked(true);
+                drawerLayout.closeDrawers();
+                return true;
+
             }
         });
     }
